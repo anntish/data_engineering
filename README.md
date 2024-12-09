@@ -15,3 +15,6 @@ docker-compose up --build
 - Password: admin
 - TLS/SSL Mode: disable
 
+## Dashboard
+
+New ]-1733772133441.json
