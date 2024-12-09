@@ -18,13 +18,13 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 2,
+  "id": 1,
   "links": [],
   "panels": [
     {
       "datasource": {
         "type": "grafana-postgresql-datasource",
-        "uid": "be6faeznobqpsc"
+        "uid": "ee6fd62aoglc0b"
       },
       "fieldConfig": {
         "defaults": {
@@ -84,7 +84,7 @@
           "editorMode": "code",
           "format": "table",
           "rawQuery": true,
-          "rawSql": "SELECT * FROM prompts_responses ",
+          "rawSql": "SELECT * FROM benchmark_llm_monitoring ",
           "refId": "A",
           "sql": {
             "columns": [
@@ -121,8 +121,8 @@
   },
   "timepicker": {},
   "timezone": "browser",
-  "title": "New dashboard Copy",
+  "title": "New ]",
   "uid": "ae6fb7q9dbxmoc",
-  "version": 1,
+  "version": 3,
   "weekStart": ""
 }
