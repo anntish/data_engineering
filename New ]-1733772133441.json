@@ -24,7 +24,7 @@
     {
       "datasource": {
         "type": "grafana-postgresql-datasource",
-        "uid": "ee6fd62aoglc0b"
+        "uid": "ae9zdhvsh3y0wd"
       },
       "fieldConfig": {
         "defaults": {
@@ -84,7 +84,7 @@
           "editorMode": "code",
           "format": "table",
           "rawQuery": true,
-          "rawSql": "SELECT * FROM benchmark_llm_monitoring ",
+          "rawSql": "SELECT * FROM benchmark_llm_monitoring ORDER BY id ASC;",
           "refId": "A",
           "sql": {
             "columns": [
@@ -123,6 +123,6 @@
   "timezone": "browser",
   "title": "New ]",
   "uid": "ae6fb7q9dbxmoc",
-  "version": 3,
+  "version": 2,
   "weekStart": ""
 }

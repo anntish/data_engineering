@@ -15,7 +15,6 @@ def read_root():
 
 CSV_FILE_PATH = "/app/data/benchmark_llm_monitoring.csv"
 
-
 def load_csv_to_db(file_path: str, db_session):
     """
     Загружает данные из CSV-файла в базу данных
@@ -32,6 +31,14 @@ def load_csv_to_db(file_path: str, db_session):
                     response_refusal_label=row.get("response_refusal_label"),
                     response_label=row.get("response_label"),
                     model=row.get("model"),
+                    language=row.get("language"),
+                    source=row.get("source"),
+                    prompt_length=row.get("prompt_length"),
+                    response_length=row.get("response_length"),
+                    security_rag_prompt_harm_label=row.get("security_rag_prompt_harm_label"),
+                    security_rag_response_refusal_label=row.get("security_rag_response_refusal_label"),
+                    security_rag_response_harm_label=row.get("security_rag_response_harm_label"),
+                    sec_rag_prompt_label=row.get("sec_rag_prompt_label"),
                 )
 
                 db_session.add(record)
